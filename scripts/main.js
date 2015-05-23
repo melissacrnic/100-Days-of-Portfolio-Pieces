@@ -1,27 +1,23 @@
 var hundredDays = {};
 
-
-hundredDays.api = function(){
-	var yourUniqueTag = "100DaysCLBC";
+// This is the API call part of the function
+hundredDays.api = function(yourUniqueTag, accessTOKEN){
 	var clientID = 'e6e756c20e004c0c90f0a99f46d43c09';
-	var accessTOKEN = '1484007492.1677ed0.58bc2427ef174f86b431e0dbc98e3efa';
 	$.ajax({
-		// This is the link you have to give IG to make an API Call
 		type: 'GET',
+		// This is the link you have to give IG to make an API Call
+		// + yourUniqueTag user enters, which searches through media -> recent
+		// And then using your uniquely generated accessTOKEN
+		// The API pulls all related tags, up to 100
+		// User can increase '&count=' string if they're keeners and have 100+
 		url: 'https://api.instagram.com/v1/tags/' + yourUniqueTag + '/media/recent/?access_token=' + accessTOKEN + '&count=100',
 		dataType: 'jsonp',
 		success: function(resp){
-			// console.log(resp);
+			// When function is run, the API results are returned here
 			hundredDays.img(resp)
 		}
-
-		// , resp.images.standard_resolution
-
-
 	}) // End of AJAX 
-
-} // End of .api method
-	// .append() to page vs. .html()
+} // End of hundredDays.api method
 
 hundredDays.img = function(imgData){
 	var items = imgData.data;
@@ -31,17 +27,13 @@ hundredDays.img = function(imgData){
 		console.log(standard);
 		// var $thumb = $('<li>').attr('src', thumb);
 		var $image = $('<img>').attr('src', standard);
-		var $fullSize = $('<li>').append($image);
+		var $fullSize = $('<li class="insta">').append($image);
 		$('ul.gallery').append($fullSize);
 	})
 };
 
-// hundredDays.toPage = function(){
-// 	$('ul.gallery').append($('li'), hundredDays.img(standard));
-// }
-
 $(function(){
-	hundredDays.api();
+	hundredDays.api('100DaysCLBC', '1484007492.1677ed0.58bc2427ef174f86b431e0dbc98e3efa');
 	// console.log(hundredDays.api());
 });
 
