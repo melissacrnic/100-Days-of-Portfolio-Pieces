@@ -1,14 +1,14 @@
-// PASTEL GALLERY
-$blush: RGBA(254, 203, 211, 1);
-$gold: RGBA(248, 221, 151, 1);
-
 // CLEAN GALLERY
 $slate: RGBA(72, 79, 99, 1);
 $ice: RGBA(231, 236, 245, 1);
 
+@import 'setup';
+@import 'pastels';
+
 body{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
+	word-wrap: break-word;
 }
 
 .wrapper {
@@ -17,22 +17,23 @@ body{
 }
 
 
-h1, h2 {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-}
-
 ul.gallery {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
 ul.gallery li {
 	width: 300px;
 	list-style-type: none;
+	// padding: 10px;
 	// display: inline;
 	img {
 		max-width: 300px;
+	}
+	span {
+		// display: inline-block;
+		margin: 10px;
 	}
 }

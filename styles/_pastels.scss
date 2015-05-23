@@ -1,0 +1,63 @@
+header {
+	height: 500px;
+	background: url(../images/ps_neutral.png);
+	margin: 0;
+	padding: 10px;
+	h1, h2 {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		color: $slate;
+	}
+
+	h1 {
+		font-size: 60px;
+		margin-top: 150px;
+	}
+
+	h2 {
+		font-size: 25px;
+		margin-bottom: 100px;
+	}
+}
+
+section.gallery {
+	background: linear-gradient(#fcfcfc, #eee);
+	.wrapper {
+		display: flex;
+	}
+}
+
+ul.gallery {
+	margin-left: 0;
+	margin-top: -80px;
+	box-shadow: 0 10px 5px #ccc;
+	padding: 15px;
+	background: #fcfcfc;
+	li.insta {
+		img {
+			-webkit-filter: desaturate;
+		}
+		background: white;
+		margin-bottom: 15px;
+		p.likes, p.captions {
+			padding: 0 10px 10px;
+		}
+		p.likes {
+			text-align: center;
+			margin: 0;
+			span {
+				color: RGBA(228, 79, 125, 1);
+			}
+		}
+		p.captions {
+			// display: none;
+		}
+	}
+}
+
+footer {
+	background: $slate;
+	padding: 20px;
+	color: $ice;
+}
