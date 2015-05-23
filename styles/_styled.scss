@@ -41,13 +41,17 @@ ul.gallery {
 	padding: 15px;
 	background: #fcfcfc;
 	li.insta {
+		position: relative;
+		a {
+			
+		}
 		img {
 			-webkit-filter: desaturate;
 		}
 		background: white;
 		margin-bottom: 15px;
 		p.likes, p.captions {
-			padding: 0 10px 10px;
+			padding: 5px 10px 10px;
 			color: RGBA(43, 48, 58, 1);
 		}
 		p.likes {
@@ -57,8 +61,25 @@ ul.gallery {
 				color: RGBA(228, 79, 125, 1);
 			}
 		}
-		p.captions {
-			
+		div.overlay {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			bottom: 50px;
+			padding: 10px;
+			text-align: center;
+			background: RGBA(43, 48, 58, 0.8);
+			color: white;
+			opacity: 0;
+			transition: all 0.2s;
+			&:hover {
+				opacity: 1;
+				cursor: crosshair;
+			}
+			p {
+				color: $ice;
+			}
 		}
 	}
 }

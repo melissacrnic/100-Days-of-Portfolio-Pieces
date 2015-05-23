@@ -40,7 +40,8 @@ hundredDays.img = function(imgData){
 		var $likeCount = $('<p class="likes">').text(likes).append($heartIcon);
 		var $cap = $('<p class="captions">').text(caption);
 		var $link = $('<a>').attr('href', hyperlink).attr('target', '_blank').append($image);
-		var $fullSize = $('<li class="insta">').append($link).append($likeCount).append($cap);
+		var $hover = $('<div class="overlay">').append($cap);
+		var $fullSize = $('<li class="insta">').append($link).append($likeCount).append($hover);
 
 		$('ul.gallery').append($fullSize);
 	})
