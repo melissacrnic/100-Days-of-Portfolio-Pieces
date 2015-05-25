@@ -39,9 +39,9 @@ hundredDays.img = function(imgData){
 		var $heartIcon = $('<span class="heartIcon">').html('<i class="fa fa-heart">');
 		var $likeCount = $('<p class="likes">').text(likes).append($heartIcon);
 		var $cap = $('<p class="captions">').text(caption);
-		var $link = $('<a>').attr('href', hyperlink).attr('target', '_blank').append($image);
 		var $hover = $('<div class="overlay">').append($cap);
-		var $fullSize = $('<li class="insta">').append($link).append($likeCount).append($hover);
+		var $link = $('<a>').attr('href', hyperlink).attr('target', '_blank').append($hover);
+		var $fullSize = $('<li class="insta">').append($image).append($likeCount).append($link);
 
 		$('ul.gallery').append($fullSize);
 	})
