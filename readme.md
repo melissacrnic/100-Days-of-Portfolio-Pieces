@@ -2,6 +2,8 @@
 ###pull your content from IG using your unique hashtag
 ######(or any other hashtag you want to pull)
 
+######[this](http://ksenijagogic.github.io/100-Days-of-Portfolio-Pieces/) is what it looks like!
+
 ###Getting Started
 What will I need?  
 1. Ideally, you'll have started the [100 Day Project ('hosted' by The Great Discontent)](https://thegreatdiscontent.com/100days)  
