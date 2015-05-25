@@ -3,7 +3,7 @@
 ######(or any other hashtag you want to pull)
 
 ###Getting Started
-What will I need?
+What will I need?  
 1. Ideally, you'll have started the [100 Day Project ('hosted' by The Great Discontent)](https://thegreatdiscontent.com/100days)  
 2. Ideally, you followed the instructions and created a hashtag unique to YOUR project  
 3. You'll need to be logged into Instagram in your browser, and use [this awesome free service to receive your access_token](http://instagram.pixelunion.net/)  
@@ -18,20 +18,15 @@ In the oneHundredDays.js file, fill in your unique tag (no hashtag/pound!) withi
 ```
 
 ###HTML File
-I've provided a "bare" index.html file for you to have a starting point. Feel free to adapt it as you see fit, but the requirements for this to work are:
-**THE ORDER IS IMPORTANT**
+I've provided a "bare" index.html file for you to have a starting point. Feel free to adapt it as you see fit, but the requirements for this to work are:  
+**THE ORDER IS IMPORTANT**  
+
 1. jQuery linked at the bottom of your page   
-`
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-`
+`<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`   
 2. The plugin script linked beneath jQuery   
-`
-<script src="scripts/plugin.js"></script>
-`
-3. Your final script file with your tag + access_token   
-`
-<script src="scripts/oneHundredDays.js"></script>
-`
+`<script src="scripts/plugin.js"></script>`  
+3. Your final script file with your tag + access_token  
+`<script src="scripts/oneHundredDays.js"></script>`  
 4. Somewhere on your page you have a `<ul class="gallery">` for the API to pull and place the images within
 
 ###CSS File
