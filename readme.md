@@ -8,7 +8,6 @@ What will I need?
 2. Ideally, you followed the instructions and created a hashtag unique to YOUR project  
 3. You'll need to be logged into Instagram in your browser, and use [this awesome free service to receive your access_token](http://instagram.pixelunion.net/)  
 4. Probably somewhere to host your hard work!  
-  
 Now, download the plugin folder and get started!
 
 ###Script Files
