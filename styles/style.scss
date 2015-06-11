@@ -1,0 +1,39 @@
+// CLEAN GALLERY
+$slate: RGBA(72, 79, 99, 1);
+$ice: RGBA(231, 236, 245, 1);
+
+@import 'setup';
+@import 'styled';
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	word-wrap: break-word;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+ul.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+ul.gallery li {
+	width: 300px;
+	list-style-type: none;
+	// padding: 10px;
+	// display: inline;
+	img {
+		max-width: 300px;
+	}
+	span {
+		// display: inline-block;
+		margin: 10px;
+	}
+}
